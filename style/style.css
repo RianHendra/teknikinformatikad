@@ -177,13 +177,13 @@ footer p {
 
 /* responsive breakpoint */
 
-@media (max-width : 400px) {
+@media (max-width : 600px) {
     .jumbotron h1 {
-        font-size: 8em;
+        font-size: 11em;
     }
 
     .jumbotron p {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     footer p {
