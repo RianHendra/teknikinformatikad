@@ -173,3 +173,21 @@ footer p {
     opacity: .9;
     cursor: pointer;
 }
+
+
+/* responsive breakpoint */
+
+@media (min-width : 600px) {
+    .jumbotron h1 {
+        font-size: 11em;
+    }
+
+    .jumbotron p {
+        font-size: 2.5em;
+    }
+
+    footer p {
+        font-size: 1em;
+        color: #fff;
+    }
+}
