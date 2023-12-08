@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Stick+No+Bills&display=swap');
+
+:root {
+    --merah: #EF5454;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.eclipse_red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+.eclipse_green {
+    position: absolute;
+    right: 0;
+    top: 500px;
+    z-index: -1;
+    width: 30%;
+}
+
+body {
+    font-family: 'Stick No Bills', sans-serif;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+.container {
+    /* height: 100vt; */
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-family: 'Inspiration', sans-serif;
+    font-size: 15em;
+    color: var(--merah);
+}
+
+.jumbotron p {
+    font-size: 3.5em;
+}
+
+
+/* akhir jumbotron */
+
+.human {
+    display: flex;
+    margin-top: 5em;
+    padding: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.image-human {
+    border-radius: 8px;
+    height: 400px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image-human img {
+    object-fit: cover;
+    width: 350px;
+    background-position: center;
+    transition: .5s all ease-in-out;
+    filter: brightness(50%);
+    border-radius: 10px;
+}
+
+.image-human span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: .8em;
+    font-size: 1.3em;
+    background-color: #fff;
+    visibility: hidden;
+    transition: .5s all ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: scale(0);
+    transform: translateY(100px);
+}
+
+.image-human:hover span {
+    visibility: visible;
+    transform: scale(1);
+}
+
+.image-human img:hover {
+    visibility: visible;
+    cursor: pointer;
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+
+/* akhir main */
+
+footer {
+    margin-top: 5rem;
+    background-color: #827F7F;
+    padding: 5em;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* akhir footer */
+
+
+.image-human-large {
+    padding: 3em;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+.image-human-large img {
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.image-human-large h2 {
+    font-size: 3em;
+}
+
+.image-human-large span {
+    padding: 0 .4em;
+    background-color: var(--merah);
+    font-size: 2em;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.image-human-large span:hover {
+    opacity: .9;
+    cursor: pointer;
+}
