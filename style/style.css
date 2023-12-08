@@ -179,7 +179,7 @@ footer p {
 
 @media only screen and (max-width : 600px) {
     .jumbotron h1 {
-        font-size: 11em;
+        font-size: 9em;
     }
 
     .jumbotron p {
